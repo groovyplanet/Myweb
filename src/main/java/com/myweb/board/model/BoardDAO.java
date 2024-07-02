@@ -42,8 +42,8 @@ public class BoardDAO {
 	//글 등록
 	public void regist(String writer, String title , String content) {
 		
-		String sql = "INSERT INTO BOARD(BNO, WRITER, TITLE,CONTENT) "
-				+ "VALUES(BOARD_SEQ.NEXTVAL, ?,  ? ,? )";
+		String sql = "INSERT INTO BOARD(BNO, WRITER, TITLE, CONTENT) "
+				+ "VALUES(BOARD_SEQ.NEXTVAL, ?,  ? , ? )";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		
